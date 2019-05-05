@@ -3,7 +3,7 @@
 ## Implementation to synchronize Android Smartphones using Audio peripheral, Wifi peripheral and BLE peripheral.
 
 This repo contains the reference implementations which can be used to synchronize time across Android smartphones. 
-We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). 
+We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). This work is currently under review. A link to the paper which has more details will be provided.
 
 ## 1. Audio peripheral
 **Audio_Sync** folder contains the implementation which is using audio subsystem to timestamp the audio events using monotonic clock provided by Android operating system. The audio timestamp is directly provided by the android operating system and no application level timestamping is used. The implementation is tested for Pixel-3 and Nexus-5x phones. The highest audio sampling rate supported by Pixel-3 and Nexus-5x is used (192k) so as to achieve the best results. In general if the implementation is to used for older devices then the sampling rate can be changed to a lower number supported by the device.
