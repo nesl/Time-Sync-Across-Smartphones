@@ -5,6 +5,15 @@
 This repo contains the reference implementations which can be used to synchronize time across Android smartphones. 
 We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). This work is currently under review. A link to the paper which has more details will be provided.
 
+## General Instructions
+1. The code consists of Android applications which can be complied and installed on Android devices.
+2. Development was done using Android Studio in Java.
+3. Each application has the code for sychronization along with local timestamp/offset calculation.
+4. The goal is to provide the clean sychronization code with minimum UI which can integreated with any application as per need.
+5. We present multiple synchronization techniques with different accuracies and tradeoffs. More figures and analysis will be made available later. The paper is under review.
+5. For any questions/queries: Feel free to reach out to sandha.iitr (at) gmail.com
+
+
 ## 1. Audio peripheral
 **Audio_Sync** folder contains the implementation which is using audio subsystem to timestamp the audio events using monotonic clock provided by Android operating system. The audio timestamp is directly provided by the android operating system and no application level timestamping is used. The implementation is tested for Pixel-3 and Nexus-5x phones. The highest audio sampling rate supported by Pixel-3 and Nexus-5x is used (192k) so as to achieve the best results. In general if the implementation is to used for older devices then the sampling rate can be changed to a lower number supported by the device.
 
