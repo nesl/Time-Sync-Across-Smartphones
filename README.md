@@ -5,6 +5,9 @@
 This repo contains the reference implementations which can be used to synchronize time across Android smartphones. 
 We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). This work is currently under review. A link to the paper which has more details will be provided.
 
+## Results
+*Code can achieve synchronization within 200 microseconds using Audio and within few milliseconds using Wi-Fi and BLE.*
+
 ## General Instructions
 1. The code consists of Android applications which can be complied and installed on Android devices.
 2. Development was done using Android Studio in Java.
