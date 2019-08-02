@@ -3,7 +3,10 @@
 ## Implementation to synchronize Android Smartphones using Audio peripheral, Wifi peripheral and BLE peripheral.
 
 This repo contains the reference implementations which can be used to synchronize time across Android smartphones. 
-We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). This work is currently under review. A link to the paper which has more details will be provided.
+We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). The paper is accepted. More figures and details will be added.
+
+## Author
+[Sandeep Singh Sandha](https://sites.google.com/view/sandeep-/home)
 
 ## Results
 *Code can achieve synchronization within 200 microseconds using Audio and within few milliseconds using Wi-Fi and BLE.*
