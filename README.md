@@ -3,20 +3,30 @@
 ## Implementation to synchronize Android Smartphones using Audio peripheral, Wifi peripheral and BLE peripheral.
 
 This repo contains the reference implementations which can be used to synchronize time across Android smartphones. 
-We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). The paper is accepted. More figures and details will be added.
+We tested the implementation on 4 Android phoness (2 pixel-3 and 2 Nexus-5x). The paper *"Exploiting Smartphone Peripherals for Precise Time Synchronization"*, ISPCS-19 has more details.
 
 ## Author
 [Sandeep Singh Sandha](https://sites.google.com/view/sandeep-/home)
 
 ## Results
-*Code can achieve synchronization within 200 microseconds using Audio and within few milliseconds using Wi-Fi and BLE.*
+*Code can achieve synchronization within 200 microseconds using Audio and within +-1 milliseconds using Wi-Fi and +-3 milliseconds using BLE for majority (>85%) of the sync attempts*. 
+
+Audio peripheral results are shown below.
+![Audio Results](https://github.com/nesl/Time-Sync-Across-Smartphones/blob/master/Audio_Results.png)
+
+Wi-Fi peripheral results are shown below.
+![Wifi Results](https://github.com/nesl/Time-Sync-Across-Smartphones/blob/master/Wifi_Results.png)
+
+Bluetooth peripheral results are shown below.
+![BLE Results](https://github.com/nesl/Time-Sync-Across-Smartphones/blob/master/BLE_Results.png)
+
 
 ## General Instructions
 1. The code consists of Android applications which can be complied and installed on Android devices.
 2. Development was done using Android Studio in Java.
 3. Each application has the code for sychronization along with local timestamp/offset calculation.
 4. The goal is to provide the clean sychronization code with minimum UI which can integreated with any application as per need.
-5. We present multiple synchronization techniques with different accuracies and tradeoffs. More figures and analysis will be made available later. The paper is under review.
+5. We present multiple synchronization techniques with different accuracies and tradeoffs.
 5. For any questions/queries: Feel free to reach out to sandha.iitr (at) gmail.com
 
 
